@@ -45,9 +45,9 @@
 		D0BFE36A286ACF8C00837F95 /* JYPUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = JYPUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		D0BFE36E286ACF8C00837F95 /* JYPUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JYPUITests.swift; sourceTree = "<group>"; };
 		D0BFE370286ACF8C00837F95 /* JYPUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JYPUITestsLaunchTests.swift; sourceTree = "<group>"; };
-		D0BFE37D286ADC1700837F95 /* Defaults.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = Defaults.xcconfig; sourceTree = "<group>"; };
 		D0BFE37E286AE32E00837F95 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
 		D0BFE37F286AE3A700837F95 /* Environment.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Environment.swift; sourceTree = "<group>"; };
+		D0BFE381286AEBDC00837F95 /* Defaults.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = Defaults.xcconfig; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -103,8 +103,8 @@
 				D0BFE355286ACF8A00837F95 /* ContentView.swift */,
 				D0BFE357286ACF8B00837F95 /* Assets.xcassets */,
 				D0BFE359286ACF8B00837F95 /* Preview Content */,
-				D0BFE37D286ADC1700837F95 /* Defaults.xcconfig */,
 				D0BFE37F286AE3A700837F95 /* Environment.swift */,
+				D0BFE381286AEBDC00837F95 /* Defaults.xcconfig */,
 			);
 			path = JYP;
 			sourceTree = "<group>";
@@ -305,7 +305,6 @@
 /* Begin XCBuildConfiguration section */
 		D0BFE372286ACF8C00837F95 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = D0BFE37D286ADC1700837F95 /* Defaults.xcconfig */;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
 				CLANG_ANALYZER_NONNULL = YES;
@@ -366,7 +365,6 @@
 		};
 		D0BFE373286ACF8C00837F95 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = D0BFE37D286ADC1700837F95 /* Defaults.xcconfig */;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
 				CLANG_ANALYZER_NONNULL = YES;
@@ -421,7 +419,6 @@
 		};
 		D0BFE375286ACF8C00837F95 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = D0BFE37D286ADC1700837F95 /* Defaults.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -452,7 +449,6 @@
 		};
 		D0BFE376286ACF8C00837F95 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = D0BFE37D286ADC1700837F95 /* Defaults.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
