@@ -1,0 +1,13 @@
+//
+//  Defaults.xcconfig
+//  JYP
+//
+//  Created by peter allgeier on 6/28/22.
+//
+
+APP_NAME = JVP
+APP_BUNDLE_ID = com.pa.JVP
+
+API_KEY = CkyHhgTyO3SrptKJwLZdG87WPXMn5lJ_zZpgTBYrdEnipOmIBagUlo8L80Oq24QciFRE-No_loInfcjR1U6VLTFZ-dmfjDxHcqnFF-ehzikAbBitL4OrcWOPc6a6YnYx
+
+BASE_API_URL = https:/$()/api.yelp.com/v3/businesses

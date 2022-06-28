@@ -9,8 +9,11 @@ import SwiftUI
 
 struct ContentView: View {
     var body: some View {
-        Text("Hello, world!")
-            .padding()
+        VStack {
+            Text("\(Environment.BASE_URL)")
+            Text("\(Environment.API_KEY)")
+            Text("CRAP")
+        }
     }
 }
 
