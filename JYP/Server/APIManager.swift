@@ -21,6 +21,12 @@ struct APIManager {
     
     public func getBusinesses(latitude: Double, longitude: Double, completion: @escaping (BusinessSearchModel?, APIError?) -> Void) {
         
+        // Check if Key field is set in settings
+        guard self.API_KEY != "" else {
+            completion(nil, .apiKeyMissing)
+            return
+        }
+        
         // Prepare URL & parameters for request to Yelp API
         guard let url = URL(string: String(format: "\(self.BASE_URL)/search?latitude=\(latitude)&longitude=\(longitude)&radius=16000&limit=10")) else {
             completion(nil, .businessSearchRequestFailed)
@@ -75,6 +81,12 @@ struct APIManager {
     
     
     public func getBusinessReview(id: String, completion: @escaping (BusinessReviewModel?, APIError?) -> Void) {
+        
+        // Check if Key field is set in settings
+        guard self.API_KEY != "" else {
+            completion(nil, .apiKeyMissing)
+            return
+        }
         
         // Prepare URL & parameters for request to Yelp API
         guard let url = URL(string: self.BASE_URL + "/" + id + "/reviews") else {
