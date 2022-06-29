@@ -11,7 +11,7 @@ import SwiftUI
 struct JYPApp: App {
     var body: some Scene {
         WindowGroup {
-            ContentView()
+            HomeScreenManagerView()
         }
     }
 }

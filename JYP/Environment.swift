@@ -7,7 +7,7 @@
 
 import Foundation
 
-public enum Environment {
+public enum Defaults {
     
     // - - - - - PLIST KEYS - - - - - //
     enum Keys {
@@ -26,7 +26,7 @@ public enum Environment {
     
     // - - - - - BASE URL - - - - - //
     static let BASE_URL: String = {
-        guard let baseURLString = Environment.infoDictionary[Keys.baseURL] as? String else {
+        guard let baseURLString = Defaults.infoDictionary[Keys.baseURL] as? String else {
             fatalError("Base URL not in plist")
         }
         
@@ -35,7 +35,7 @@ public enum Environment {
     
     // - - - - - API KEY - - - - - //
     static let API_KEY: String = {
-        guard let apiKeyString = Environment.infoDictionary[Keys.apiKey] as? String else {
+        guard let apiKeyString = Defaults.infoDictionary[Keys.apiKey] as? String else {
             fatalError("API Key not in plist")
         }
         

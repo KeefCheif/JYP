@@ -6,13 +6,28 @@
 //
 
 import SwiftUI
+import CoreLocationUI
 
 struct ContentView: View {
+    
+    @StateObject private var location_manager = LocationManager()
+    
     var body: some View {
         VStack {
+            /*
             Text("\(Environment.BASE_URL)")
             Text("\(Environment.API_KEY)")
-            Text("CRAP")
+            
+            if let location = self.location_manager.location {
+                Text("Location = Lat: \(location.latitude), Long: \(location.longitude)")
+            }
+            
+            LocationButton {
+                self.location_manager.requestLocation()
+            }
+            */
+            
+            Text("Hello World")
         }
     }
 }
