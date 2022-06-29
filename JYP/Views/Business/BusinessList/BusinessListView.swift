@@ -90,6 +90,16 @@ struct BusinessListView: View {
                 }
             }
         }
+        .alert("Retrieve Businesses Error", isPresented: .constant(self.view_model.api_error != nil), actions: {
+            Button("Exit", role: .cancel, action: {
+                self.view_model.api_error = nil
+                self.city = nil
+            })
+        }, message: {
+            if let error = self.view_model.api_error {
+                Text(error.localizedDescription)
+            }
+        })
     }
 }
 
