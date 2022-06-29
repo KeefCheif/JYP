@@ -9,10 +9,20 @@ import Foundation
 
 struct APIManager {
     
+    private let BASE_URL: String
+    private let API_KEY: String
+    
+    init() {
+        configureSettingsBundle()
+        
+        self.BASE_URL = userDefaults.string(forKey: "SERVER_BASE_URL")!
+        self.API_KEY = userDefaults.string(forKey: "YELP_API_KEY") ?? ""
+    }
+    
     public func getBusinesses(latitude: Double, longitude: Double, completion: @escaping (BusinessSearchModel?, APIError?) -> Void) {
         
         // Prepare URL & parameters for request to Yelp API
-        guard let url = URL(string: String(format: "\(Defaults.BASE_URL)/search?latitude=\(latitude)&longitude=\(longitude)&radius=16000&limit=10")) else {
+        guard let url = URL(string: String(format: "\(self.BASE_URL)/search?latitude=\(latitude)&longitude=\(longitude)&radius=16000&limit=10")) else {
             completion(nil, .businessSearchRequestFailed)
             return
         }
@@ -20,7 +30,7 @@ struct APIManager {
         // Initialize GET Request with url, headers, & parameters
         var request = URLRequest(url: url)
         request.httpMethod = "GET"
-        request.setValue("Bearer \(Defaults.API_KEY)", forHTTPHeaderField: "Authorization")
+        request.setValue("Bearer \(self.API_KEY)", forHTTPHeaderField: "Authorization")
         request.setValue("Application/json", forHTTPHeaderField: "Content-Type")
         request.timeoutInterval = 10
         
@@ -67,7 +77,7 @@ struct APIManager {
     public func getBusinessReview(id: String, completion: @escaping (BusinessReviewModel?, APIError?) -> Void) {
         
         // Prepare URL & parameters for request to Yelp API
-        guard let url = URL(string: Defaults.BASE_URL + "/" + id + "/reviews") else {
+        guard let url = URL(string: self.BASE_URL + "/" + id + "/reviews") else {
             completion(nil, .businessReviewsRequestFailed)
             return
         }
@@ -75,7 +85,7 @@ struct APIManager {
         // Initialize the GET Request with the URL
         var request = URLRequest(url: url)
         request.httpMethod = "GET"
-        request.setValue("Bearer \(Defaults.API_KEY)", forHTTPHeaderField: "Authorization")
+        request.setValue("Bearer \(self.API_KEY)", forHTTPHeaderField: "Authorization")
         request.setValue("Application/json", forHTTPHeaderField: "Content-Type")
         request.timeoutInterval = 10
         

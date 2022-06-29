@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>StringsTable</key>
+	<string>Root</string>
+	<key>PreferenceSpecifiers</key>
+	<array>
+		<dict>
+			<key>Type</key>
+			<string>PSTextFieldSpecifier</string>
+			<key>Title</key>
+			<string>Yelp Base URL</string>
+			<key>Key</key>
+			<string>SERVER_BASE_URL</string>
+			<key>DefaultValue</key>
+			<string>https://api.yelp.com/v3/businesses</string>
+		</dict>
+		<dict>
+			<key>Type</key>
+			<string>PSTextFieldSpecifier</string>
+			<key>Title</key>
+			<string>Yelp Key</string>
+			<key>Key</key>
+			<string>YELP_API_KEY</string>
+		</dict>
+	</array>
+</dict>
+</plist>

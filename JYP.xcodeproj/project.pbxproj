@@ -38,6 +38,8 @@
 		D0BFE3BC286BCF7100837F95 /* BusinessDetailRating.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0BFE3BB286BCF7100837F95 /* BusinessDetailRating.swift */; };
 		D0BFE3BE286BCFB900837F95 /* BusinessDetailTopNav.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0BFE3BD286BCFB900837F95 /* BusinessDetailTopNav.swift */; };
 		D0BFE3C1286BD10600837F95 /* BusinessListTopNav.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0BFE3C0286BD10600837F95 /* BusinessListTopNav.swift */; };
+		D0BFE3FA286BD85000837F95 /* Settings.bundle in Resources */ = {isa = PBXBuildFile; fileRef = D0BFE3F9286BD85000837F95 /* Settings.bundle */; };
+		D0BFE3FC286BDBB300837F95 /* SettingsBundleManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0BFE3FB286BDBB300837F95 /* SettingsBundleManager.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -94,6 +96,9 @@
 		D0BFE3BB286BCF7100837F95 /* BusinessDetailRating.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BusinessDetailRating.swift; sourceTree = "<group>"; };
 		D0BFE3BD286BCFB900837F95 /* BusinessDetailTopNav.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BusinessDetailTopNav.swift; sourceTree = "<group>"; };
 		D0BFE3C0286BD10600837F95 /* BusinessListTopNav.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BusinessListTopNav.swift; sourceTree = "<group>"; };
+		D0BFE3F8286BD5F100837F95 /* Defaults.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = Defaults.xcconfig; sourceTree = "<group>"; };
+		D0BFE3F9286BD85000837F95 /* Settings.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = Settings.bundle; sourceTree = "<group>"; };
+		D0BFE3FB286BDBB300837F95 /* SettingsBundleManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsBundleManager.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -144,6 +149,7 @@
 		D0BFE352286ACF8A00837F95 /* JYP */ = {
 			isa = PBXGroup;
 			children = (
+				D0BFE3FB286BDBB300837F95 /* SettingsBundleManager.swift */,
 				D0BFE395286B03CF00837F95 /* Errors */,
 				D0BFE389286AF3A400837F95 /* Models */,
 				D0BFE388286AF39C00837F95 /* ViewModels */,
@@ -156,6 +162,8 @@
 				D0BFE359286ACF8B00837F95 /* Preview Content */,
 				D0BFE37F286AE3A700837F95 /* Environment.swift */,
 				D0BFE381286AEBDC00837F95 /* Defaults.xcconfig */,
+				D0BFE3F8286BD5F100837F95 /* Defaults.xcconfig */,
+				D0BFE3F9286BD85000837F95 /* Settings.bundle */,
 			);
 			path = JYP;
 			sourceTree = "<group>";
@@ -404,6 +412,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				D0BFE35B286ACF8B00837F95 /* Preview Assets.xcassets in Resources */,
+				D0BFE3FA286BD85000837F95 /* Settings.bundle in Resources */,
 				D0BFE358286ACF8B00837F95 /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -438,6 +447,7 @@
 				D0BFE386286AEE2200837F95 /* LocationManager.swift in Sources */,
 				D0BFE3BC286BCF7100837F95 /* BusinessDetailRating.swift in Sources */,
 				D0BFE3B5286BCB9700837F95 /* BusinessTitleLikeView.swift in Sources */,
+				D0BFE3FC286BDBB300837F95 /* SettingsBundleManager.swift in Sources */,
 				D0BFE397286B040400837F95 /* APIError.swift in Sources */,
 				D0BFE380286AE3A700837F95 /* Environment.swift in Sources */,
 				D0BFE38E286AF55000837F95 /* LocationListItem.swift in Sources */,

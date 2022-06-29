@@ -9,6 +9,7 @@ import SwiftUI
 
 @main
 struct JYPApp: App {
+    
     var body: some Scene {
         WindowGroup {
             HomeScreenManagerView()
