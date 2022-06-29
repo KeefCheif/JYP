@@ -11,3 +11,7 @@ Fill in the authorized Yelp API key under the "Yelp Key" setting then return to 
 
 # Current Location
 The app also allows the user to use their current location if they choose. However, if the App is run from an XCode simulator then the location of the user is assumed to be in San Francisco. The actual current location of the user will be used if the App is run from their device, not a simulator.
+
+# Disclaimers
+I have not thoroughly tested the app on multiple IOS devices, but the app should work as inteded on Iphone 8 and up
+Furthermore, I encourage you to check out the app in both light and dark mode which can be eneabled & disabled from the Settings App
